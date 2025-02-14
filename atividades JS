@@ -1,0 +1,52 @@
+//atividade 1
+
+let nome = prompt("Digite o seu nome")
+let idade = Number(prompt("Informe a sua idade"))
+
+let mensagem = alert(`Olá, ${nome}, você tem ${idade} anos. Bem vindo(a)!`)
+
+//atividade 2
+
+let nota1 = Number(prompt("Informe a primeira nota"))
+let nota2 = Number(prompt("Informe a segunda nota"))
+let media = (nota1 * 3.5 + nota2 * 7.5)/11
+
+alert(`A sua média é igual a: ${media}`)
+
+//atividade 3
+
+let numero = Number(prompt("Informe um número:"))
+
+let divisao = numero % 4 == 0 && numero % 7 == 0 ? "O número segue o padrão" : "O número não segue o padrão"
+
+alert(divisao)
+
+//atividade 4
+
+let valorProduto = Number(prompt("Informe o valor do produto:"))
+
+let desconto = valorProduto*0.9
+
+let parcela = valorProduto/3
+
+let comissaoAVista = desconto*0.05
+
+let comissaoParcelada = valorProduto*0.05
+
+alert(`O valor do produto é: ${valorProduto}`)
+alert(`O valor a vista com desconto é: R$ ${desconto}`)
+alert(`O valor da em 3x sem juros é: R$ ${parcela}`)
+alert(`A comissão do vendedor a vista é: R$ ${comissaoAVista.2f}`)
+alert(`A comissão do vendedor a prazo é: R$ ${comissaoParcelada.2f}`)
+
+//atividade 5
+
+let seuNome = prompt("Qual o seu nome?")
+
+let peso = Number(prompt("Quanto você pesa?"))
+
+let altura = Number(prompt("Qual a sua altura?"))
+
+confirm(`Nome: ${seuNome}\n Peso: ${peso}\n Altura: ${altura}`)
+
+c ? alert : 
