@@ -17,7 +17,7 @@ alert(`A sua média é igual a: ${media}`)
 
 let numero = Number(prompt("Informe um número:"))
 
-let divisao = numero % 4 == 0 && numero % 7 == 0 ? "O número segue o padrão" : "O número não segue o padrão"
+let divisao = numero % 4 == 0 && numero % 7 == 0 && numero % 5 != 0 ? "O número segue o padrão" : "O número não segue o padrão"
 
 alert(divisao)
 
@@ -47,6 +47,8 @@ let peso = Number(prompt("Quanto você pesa?"))
 
 let altura = Number(prompt("Qual a sua altura?"))
 
-confirm(`Nome: ${seuNome}\n Peso: ${peso}\n Altura: ${altura}`)
+let IMC = peso / altura^2
 
-c ? alert : 
+let confirmacao = confirm(`Nome: ${seuNome}\n Peso: ${peso}\n Altura: ${altura}`)
+
+confirmacao ? alert(`O valor do seu IMC é: ${IMC}`) : alert(`Você saiu do programa`)
