@@ -47,7 +47,7 @@ let peso = Number(prompt("Quanto você pesa?"))
 
 let altura = Number(prompt("Qual a sua altura?"))
 
-let IMC = peso / altura^2
+let IMC = peso / Math.pow(altura, 2)
 
 let confirmacao = confirm(`Nome: ${seuNome}\n Peso: ${peso}\n Altura: ${altura}`)
 
